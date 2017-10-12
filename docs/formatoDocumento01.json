@@ -1,0 +1,33 @@
+{
+    "_id" : ObjectId("59dfbf7b22435f21c4f09648"),
+    "nome" : "Neymar da Silva Santos Júnior",
+    "data_nascimento" : ISODate("1993-02-05T03:00:00.000Z"),
+    "email" : "neymar.jr@gmail.com",
+    "ativo" : true,
+    "salario" : 10000000.23,
+    "dependentes" : {
+        "nome" : "Alok Achkar Peres Petrillo",
+        "data_nascimento" : ISODate("1991-08-26T03:00:00.000Z"),
+        "email" : "alok@artistfactory.com",
+        "parentesco" : "filho"
+    },
+    "funcao" : {
+        "nome" : "Desenvolvedor Java Jr.",
+        "descricao" : "Desenvolver, analisar requisitos e testar aplicações Java Web, utuilizando conhecimentos em HTML, Javascript, Css, entre outros"
+    },
+    "empresa" : {
+        "nome" : "Unisys",
+        "data_criacao" : ISODate("1900-01-01T03:06:28.000Z"),
+        "num_funcionarios" : 100000,
+        "lucro" : 5000000000.5,
+        "endereco" : {
+            "pais" : "Brasil",
+            "estado" : "MG",
+            "cidade" : "Belo Horizonte",
+            "bairro" : "Santa Efigênia",
+            "rua" : "Av. dos Andradas",
+            "numero" : 3000,
+            "cep" : "30260070"
+        }
+    }
+}

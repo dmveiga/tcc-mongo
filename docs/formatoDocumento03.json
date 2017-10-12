@@ -1,0 +1,33 @@
+{
+    "_id" : ObjectId("59dfe9f022435f2c1052557f"),
+    "nome" : "Gisele Caroline Bündchen",
+    "data_nascimento" : ISODate("1975-10-28T03:00:00.000Z"),
+    "email" : "gisele@outlook.com",
+    "ativo" : true,
+    "salario" : 15000000.99,
+    "dependentes" : {
+        "nome" : "Larissa de Macedo Machado",
+        "data_nascimento" : ISODate("1993-03-30T03:00:00.000Z"),
+        "email" : "anitta@somlivre.com.br",
+        "parentesco" : "filha"
+    },
+    "funcao" : {
+        "nome" : "SCRUM Master",
+        "descricao" : "O Scrum Master procura assegurar que a equipe respeite e siga os valores e as práticas\"\r\n do Scrum. Ele também protege a equipe assegurando que ela não se comprometa excessivamente com relação àquilo que\"\r\n é capaz de realizar durante um Sprint."
+    },
+    "empresa" : {
+        "nome" : "Google",
+        "data_criacao" : ISODate("2000-02-02T02:00:00.000Z"),
+        "num_funcionarios" : 300000,
+        "lucro" : 15000000000.5,
+        "endereco" : {
+            "pais" : "Brasil",
+            "estado" : "RJ",
+            "cidade" : "Rio de Janeiro",
+            "bairro" : "Lapa",
+            "rua" : "R. Teixeira de Freitas",
+            "numero" : 31,
+            "cep" : "20021350"
+        }
+    }
+}

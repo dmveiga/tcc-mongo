@@ -1,0 +1,33 @@
+{
+    "_id" : ObjectId("59dfbf7b22435f21c4f09649"),
+    "nome" : "William Henry Gates III",
+    "data_nascimento" : ISODate("1992-02-05T02:00:00.000Z"),
+    "email" : "bill@microsoft.com",
+    "ativo" : false,
+    "salario" : 50000000.75,
+    "dependentes" : {
+        "nome" : "Marília Mendonça",
+        "data_nascimento" : ISODate("1995-07-22T03:00:00.000Z"),
+        "email" : "marilia@hotmail.com",
+        "parentesco" : "prima"
+    },
+    "funcao" : {
+        "nome" : "Gerente de Projetos",
+        "descricao" : "Os gerentes de projetos cultivam as habilidades das pessoas para desenvolver confiança e comunicação entre todas as partes interessadas do projeto: seus patrocinadores, aqueles que farão uso dos resultados do projeto, aqueles que dispõem dos recursos necessários e os membros da equipe do projeto"
+    },
+    "empresa" : {
+        "nome" : "Microsoft",
+        "data_criacao" : ISODate("1950-02-02T02:00:00.000Z"),
+        "num_funcionarios" : 200000,
+        "lucro" : 10000000000.5,
+        "endereco" : {
+            "pais" : "Brasil",
+            "estado" : "SP",
+            "cidade" : "São Paulo",
+            "bairro" : "Morumbi",
+            "rua" : "Av. Dr. Chucri Zaidan",
+            "numero" : 1240,
+            "cep" : "04711130"
+        }
+    }
+}

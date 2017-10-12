@@ -11,10 +11,10 @@ import com.mongodb.MongoClient;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 
-public class App {
+public class Inserir {
 	public static void main(String[] args) {
 
-		System.out.println("Conectando ao MariaDb");
+		System.out.println("Conectando ao MongoDb");
 		
 		MongoClient mongo = new MongoClient("localhost", 27017);
 
@@ -44,20 +44,16 @@ public class App {
 
 		System.out.println("Inserindo dados...");
 		
-		
-		
-		
 		ArrayList<Document> listaDocs = new ArrayList<Document>();
-		for (int i = 0; i < quantidade / 3; i++) {
+		int loops = quantidade / 3;
+		for (int i = 0; i < loops; i++) {
 			
 			listaDocs.add(criarDocumento1());
 			listaDocs.add(criarDocumento2());
 			listaDocs.add(criarDocumento3());
-//			table.insertOne(doc1);
-//			table.insertOne(doc2);
-//			table.insertOne(doc3);
+
 		}
-		
+		listaDocs.add(criarDocumento3());
 		long inicio = System.nanoTime();
 		
 		for(Document doc : listaDocs) {
@@ -70,23 +66,6 @@ public class App {
 
 		System.out.println("Registros inseridos com sucesso!");
 		System.out.println("Tempo decorrido(em segundos): " + segundos);
-
-		// table.insertOne(doc);
-
-		// BasicDBObject searchQuery = new BasicDBObject();
-		// searchQuery.put("nome", "Daniel");
-
-		// System.out.println("Find one:");
-
-		// MongoCursor<Document> cursor = table.find().iterator();
-		// try {
-		// while (cursor.hasNext()) {
-		// Document cur = (Document) cursor.next();
-		// System.out.println(cur);
-		// }
-		// } finally {
-		// cursor.close();
-		// }
 
 		mongo.close();
 
@@ -224,11 +203,11 @@ public class App {
 				.append("cep", "20021350");
 		
     	doc = new Document()
-    	.append("nome", "Neymar da Silva Santos Júnior")
-    	.append("data_nascimento", converteStringParaDate("05/02/1993"))
-    	.append("email", "neymar.jr@gmail.com")
+    	.append("nome", "Gisele Caroline Bündchen")
+    	.append("data_nascimento", converteStringParaDate("28/10/1975"))
+    	.append("email", "gisele@outlook.com")
     	.append("ativo", true)
-    	.append("salario", 10000000.23)
+    	.append("salario", 15000000.99)
     	//Dependentes
     	.append("dependentes", dependente)// 
     	//Função
